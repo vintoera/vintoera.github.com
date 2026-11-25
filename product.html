@@ -41,7 +41,16 @@
 					<div class="product-action-buttons">
 						<button class="button cart-add-detail" id="add-to-cart" type="button">Add to cart</button>
 						<a class="button whatsapp-button" id="whatsapp-link" href="https://wa.me/917708564234" target="_blank" rel="noreferrer" aria-label="Order on WhatsApp"><span aria-hidden="true">◌</span> WhatsApp</a>
+						<button class="button share-button" id="share-product" type="button" aria-label="Share this product" title="Share this product">
+							<svg class="share-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+								<circle cx="18" cy="5" r="3"></circle>
+								<circle cx="6" cy="12" r="3"></circle>
+								<circle cx="18" cy="19" r="3"></circle>
+								<path d="m8.7 10.7 6.6-4.4M8.7 13.3l6.6 4.4"></path>
+							</svg>
+						</button>
 					</div>
+					<p class="share-status" id="share-status" role="status" aria-live="polite" hidden></p>
 				</div>
 			</div>
 			<div class="detail-copy">
@@ -205,6 +214,35 @@
 				{ name: 'Soft Blue Hearts', price: '₹119', image: 'Soft Blue Hearts.png', description: 'A gentle soft-blue phone charm decorated with heart-shaped accents.' },
 				{ name: 'hard Blue Hearts', price: '₹119', image: 'Soft Blue Hearts.png', description: 'A gentle soft-blue phone charm decorated with heart-shaped accents.' }
 			] },
+			'anklets': {
+				name: 'Anklets',
+				price: '₹280',
+				image: 'Ank front image.jpg',
+				description: 'Browse 20 anklet designs and select the one you love.',
+				details: ['Choose from 20 anklet designs', 'Select a design to see its image and price'],
+				variants: [
+					{ name: 'Anklet 1', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 2', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 3', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 4', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 5', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 6', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 7', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 8', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 9', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 10', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 11', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 12', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 13', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 14', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 15', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 16', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 17', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 18', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 19', price: '₹280', image: 'Ank front image.jpg' },
+					{ name: 'Anklet 20', price: '₹280', image: 'Ank front image.jpg' }
+				]
+			},
 			
 			pearl: {
 				name: 'Lunova Chain Collection',
@@ -240,28 +278,138 @@
 				price: '₹350',
 				image: 'Earring collection image.jpg',
 				description: 'Explore lightweight earrings with colourful details and a polished finish, designed to bring a little personality to everyday and occasion looks.',
-				details: ['Lightweight design for comfortable wear', 'Colourful details add a playful finishing touch', 'Store dry and wipe gently after wearing'],
-				variants: [
-					{ name: 'Earring Design 01', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 01. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 02', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 02. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 03', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 03. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 04', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 04. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 05', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 05. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 06', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 06. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 07', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 07. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 08', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 08. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 09', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 09. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 10', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 10. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 11', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 11. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 12', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 12. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 13', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 13. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 14', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 14. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 15', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 15. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 16', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 16. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 17', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 17. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 18', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 18. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 19', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 19. Replace the photo and description with its shape, colour, material, and finish.' },
-					{ name: 'Earring Design 20', price: '₹350', image: 'Earring collection image.jpg', description: 'Placeholder for earring design 20. Replace the photo and description with its shape, colour, material, and finish.' }
+				details: ['Choose from five earring categories', 'Select a design to see its image and price', 'Store dry and wipe gently after wearing'],
+				variantGroups: [
+					{
+						name: 'Studs',
+						image: 'Earring collection image.jpg',
+						variants: [
+							{ name: 'Studs 1', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 2', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 3', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 4', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 5', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 6', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 7', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 8', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 9', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 10', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 11', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 12', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 13', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 14', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 15', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 16', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 17', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 18', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 19', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Studs 20', price: '₹350', image: 'Earring collection image.jpg' }
+						]
+					},
+					{
+						name: 'Western',
+						image: 'Earring collection image.jpg',
+						variants: [
+							{ name: 'Western 1', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 2', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 3', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 4', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 5', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 6', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 7', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 8', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 9', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 10', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 11', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 12', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 13', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 14', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 15', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 16', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 17', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 18', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 19', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Western 20', price: '₹350', image: 'Earring collection image.jpg' }
+						]
+					},
+					{
+						name: 'Jumkhas',
+						image: 'Earring collection image.jpg',
+						variants: [
+							{ name: 'Jumkhas 1', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 2', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 3', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 4', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 5', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 6', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 7', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 8', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 9', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 10', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 11', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 12', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 13', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 14', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 15', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 16', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 17', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 18', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 19', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Jumkhas 20', price: '₹350', image: 'Earring collection image.jpg' }
+						]
+					},
+					{
+						name: 'Korean',
+						image: 'Earring collection image.jpg',
+						variants: [
+							{ name: 'Korean 1', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 2', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 3', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 4', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 5', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 6', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 7', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 8', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 9', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 10', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 11', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 12', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 13', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 14', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 15', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 16', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 17', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 18', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 19', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Korean 20', price: '₹350', image: 'Earring collection image.jpg' }
+						]
+					},
+					{
+						name: 'Combos',
+						image: 'Earring collection image.jpg',
+						variants: [
+							{ name: 'Combos 1', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 2', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 3', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 4', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 5', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 6', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 7', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 8', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 9', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 10', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 11', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 12', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 13', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 14', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 15', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 16', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 17', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 18', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 19', price: '₹350', image: 'Earring collection image.jpg' },
+							{ name: 'Combos 20', price: '₹350', image: 'Earring collection image.jpg' }
+						]
+					}
 				]
 			},
 			'resin-bracelet': {
@@ -513,6 +661,8 @@
 		const variantPicker = document.getElementById('model-variants');
 		const variantOptions = document.getElementById('variant-options');
 		const whatsappLink = document.getElementById('whatsapp-link');
+		const shareButton = document.getElementById('share-product');
+		const shareStatus = document.getElementById('share-status');
 		const addToCartButton = document.getElementById('add-to-cart');
 		const wishlistButton = document.getElementById('wishlist-button');
 		const productCartCount = document.getElementById('product-cart-count').querySelector('.cart-badge');
@@ -521,6 +671,7 @@
 		productCartCount.textContent = getCartPieces(JSON.parse(localStorage.getItem('vintoera-cart') || '[]'));
 		let selectedVariant = null;
 		let selectedPosterSize = null;
+		let selectedVariantGroup = null;
 		let restoringShoppingReturn = false;
 		let restoringPosterHistory = false;
 		let quantity = 1;
@@ -528,6 +679,38 @@
 		const quantityTotal = document.getElementById('quantity-total');
 		const quantitySummaryLabel = document.getElementById('quantity-summary-label');
 		const getPriceAmount = (price) => Number(price.replace(/[^0-9.]/g, ''));
+		shareButton.addEventListener('click', async () => {
+			const shareUrl = new URL(window.location.href);
+			if (selectedPosterSize) shareUrl.searchParams.set('posterSize', selectedPosterSize.name);
+			else shareUrl.searchParams.delete('posterSize');
+			if (selectedVariantGroup) shareUrl.searchParams.set('group', selectedVariantGroup.name);
+			else shareUrl.searchParams.delete('group');
+			if (selectedVariant) shareUrl.searchParams.set('variant', selectedVariant.name);
+			else shareUrl.searchParams.delete('variant');
+
+			shareStatus.hidden = true;
+			try {
+				if (typeof navigator.share === 'function') {
+					await navigator.share({
+						title: document.getElementById('product-name').textContent,
+						text: `${document.getElementById('product-name').textContent} · ${document.getElementById('product-price').textContent}`,
+						url: shareUrl.toString()
+					});
+				} else if (navigator.clipboard && navigator.clipboard.writeText) {
+					await navigator.clipboard.writeText(shareUrl.toString());
+					shareStatus.textContent = 'Product link copied to clipboard.';
+					shareStatus.hidden = false;
+				} else {
+					window.prompt('Copy this product link to share it:', shareUrl.toString());
+					shareStatus.textContent = 'Copy the product link above to share it.';
+					shareStatus.hidden = false;
+				}
+			} catch (error) {
+				if (error.name === 'AbortError') return;
+				shareStatus.textContent = 'Unable to share this product. Please try again.';
+				shareStatus.hidden = false;
+			}
+		});
 		function getWishlistItems() {
 			const items = JSON.parse(localStorage.getItem('vintoera-wishlist') || '[]');
 			return Array.isArray(items) ? items : [];
@@ -544,11 +727,13 @@
 				image: currentImages[currentImageIndex] || product.image,
 				href: `${window.location.pathname.split('/').pop()}${window.location.search}${window.location.hash}`,
 				variantName: selectedVariant ? selectedVariant.name : '',
+				variantGroupName: selectedVariantGroup ? selectedVariantGroup.name : '',
 				posterSizeName: selectedPosterSize ? selectedPosterSize.name : ''
 			};
 		}
 		function updateWishlistButton() {
-			const selectionUnavailable = product.posterSizes && (!selectedPosterSize || !selectedVariant);
+			const selectionUnavailable = (product.posterSizes && (!selectedPosterSize || !selectedVariant))
+				|| (product.variantGroups && !selectedVariant);
 			const currentItem = getSelectedProductItem();
 			const wishlist = getWishlistItems();
 			const isSaved = wishlist.some((item) => item.name === currentItem.name && item.price === currentItem.price);
@@ -592,6 +777,7 @@
 			sessionStorage.setItem('vintoera-shopping-return', JSON.stringify({
 				href: `${window.location.pathname.split('/').pop()}${window.location.search}${window.location.hash}`,
 				variantName: selectedVariant ? selectedVariant.name : '',
+				variantGroupName: selectedVariantGroup ? selectedVariantGroup.name : '',
 				posterSizeName: selectedPosterSize ? selectedPosterSize.name : '',
 				scrollY: window.scrollY
 			}));
@@ -615,7 +801,8 @@
 		});
 
 		function updateOrderLink() {
-			if (product.posterSizes && (!selectedPosterSize || !selectedVariant)) {
+			if ((product.posterSizes && (!selectedPosterSize || !selectedVariant))
+				|| (product.variantGroups && !selectedVariant)) {
 				whatsappLink.href = '#';
 				whatsappLink.setAttribute('aria-disabled', 'true');
 				return;
@@ -676,6 +863,88 @@
 			});
 		}
 
+		function renderVariantGroups(groups) {
+			variantOptions.replaceChildren();
+			groups.forEach((group) => {
+				const option = document.createElement('button');
+				option.className = 'variant-option';
+				option.type = 'button';
+				const optionImage = document.createElement('img');
+				optionImage.className = 'variant-thumb';
+				optionImage.src = group.image || product.image;
+				optionImage.alt = group.name;
+				optionImage.addEventListener('error', () => {
+					optionImage.onerror = null;
+					optionImage.src = product.image;
+				});
+				const optionName = document.createElement('span');
+				optionName.textContent = group.name;
+				const optionCount = document.createElement('strong');
+				optionCount.textContent = `${group.variants.length} designs`;
+				option.append(optionImage, optionName, optionCount);
+				option.addEventListener('click', () => showVariantGroup(group));
+				variantOptions.appendChild(option);
+			});
+		}
+
+		function showVariantGroup(group) {
+			selectedVariant = null;
+			selectedVariantGroup = group;
+			variantPicker.hidden = false;
+			variantPicker.querySelector('.variant-label').textContent = `Choose a design · ${group.name}`;
+			posterSizeBackButton.textContent = '← Back to earring categories';
+			posterSizeBackButton.hidden = false;
+			document.getElementById('product-name').textContent = group.name;
+			document.getElementById('crumb-name').textContent = group.name;
+			document.title = `Vintoera | ${group.name}`;
+			document.getElementById('product-price').textContent = 'Choose a design';
+			document.getElementById('product-description').textContent = `Browse ${group.variants.length} ${group.name.toLowerCase()} designs and select one.`;
+			renderProductDetails(product.details);
+			currentImages = [group.image || product.image];
+			currentImageIndex = 0;
+			showCurrentImage();
+			productImage.alt = group.name;
+			addToCartButton.disabled = true;
+			quantitySummaryLabel.textContent = 'Select an earring design';
+			quantityTotal.textContent = '—';
+			renderVariantOptions(group.variants);
+
+			const searchParams = new URLSearchParams(window.location.search);
+			const requestedGroup = searchParams.get('group');
+			const requestedVariant = requestedGroup && requestedGroup.toLowerCase() === group.name.toLowerCase()
+				? searchParams.get('variant')
+				: null;
+			const requestedVariantOption = [...variantOptions.querySelectorAll('.variant-option')]
+				.find((option) => option.querySelector('span').textContent.toLowerCase() === (requestedVariant || '').toLowerCase());
+			if (requestedVariantOption) requestedVariantOption.click();
+			updateOrderLink();
+			updateWishlistButton();
+		}
+
+		function showVariantGroups() {
+			selectedVariant = null;
+			selectedVariantGroup = null;
+			variantPicker.hidden = false;
+			variantPicker.querySelector('.variant-label').textContent = 'Choose an earring category';
+			posterSizeBackButton.hidden = true;
+			document.getElementById('product-name').textContent = product.name;
+			document.getElementById('crumb-name').textContent = product.name;
+			document.title = `Vintoera | ${product.name}`;
+			document.getElementById('product-price').textContent = 'Choose an earring category';
+			document.getElementById('product-description').textContent = product.description;
+			renderProductDetails(product.details);
+			currentImages = [product.image];
+			currentImageIndex = 0;
+			showCurrentImage();
+			productImage.alt = product.name;
+			addToCartButton.disabled = true;
+			quantitySummaryLabel.textContent = 'Select an earring design';
+			quantityTotal.textContent = '—';
+			renderVariantGroups(product.variantGroups);
+			updateOrderLink();
+			updateWishlistButton();
+		}
+
 		if (product.posterSizes) {
 			posterSizePicker.hidden = false;
 			const initialPosterHistoryState = history.state && typeof history.state === 'object' ? history.state : {};
@@ -706,6 +975,10 @@
 				quantitySummaryLabel.textContent = 'Select a poster design';
 				quantityTotal.textContent = '—';
 				renderVariantOptions(size.posters);
+				const requestedVariant = new URLSearchParams(window.location.search).get('variant');
+				const requestedVariantOption = [...variantOptions.querySelectorAll('.variant-option')]
+					.find((option) => option.querySelector('span').textContent.toLowerCase() === (requestedVariant || '').toLowerCase());
+				if (requestedVariantOption) requestedVariantOption.click();
 				updateOrderLink();
 				updateWishlistButton();
 			}
@@ -780,6 +1053,13 @@
 					showPosterSizes();
 				}
 			});
+		} else if (product.variantGroups) {
+			posterSizeBackButton.addEventListener('click', showVariantGroups);
+			showVariantGroups();
+			const requestedGroup = new URLSearchParams(window.location.search).get('group');
+			const requestedGroupOption = [...variantOptions.querySelectorAll('.variant-option')]
+				.find((option) => option.querySelector('span').textContent.toLowerCase() === (requestedGroup || '').toLowerCase());
+			if (requestedGroupOption) requestedGroupOption.click();
 		} else if (product.variants) {
 			variantPicker.hidden = false;
 			renderVariantOptions(product.variants);
@@ -807,6 +1087,11 @@
 					if (sizeOption) {
 						sizeOption.click();
 					}
+				}
+				if (shoppingReturn.variantGroupName && product.variantGroups) {
+					const groupOption = [...variantOptions.querySelectorAll('.variant-option')]
+						.find((option) => option.querySelector('span').textContent === shoppingReturn.variantGroupName);
+					if (groupOption) groupOption.click();
 				}
 				if (shoppingReturn.variantName) {
 					const variantOption = [...variantOptions.querySelectorAll('.variant-option')]

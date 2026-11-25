@@ -44,6 +44,12 @@
                     <label for="customer-name">Full name</label>
                     <input id="customer-name" type="text" autocomplete="name" required>
 
+                    <label for="customer-mobile">Mobile number</label>
+                    <input id="customer-mobile" type="tel" inputmode="tel" autocomplete="tel" required>
+
+                    <label for="customer-email">Email address (optional)</label>
+                    <input id="customer-email" type="email" autocomplete="email">
+
                     <label for="delivery-address">Delivery address</label>
                     <textarea id="delivery-address" rows="3" autocomplete="street-address" required></textarea>
 
@@ -86,6 +92,8 @@
         const customerDetailsKey = 'vintoera-customer-details';
         const customerDetailFields = {
             name: document.getElementById('customer-name'),
+            mobile: document.getElementById('customer-mobile'),
+            email: document.getElementById('customer-email'),
             address: document.getElementById('delivery-address'),
             city: document.getElementById('delivery-city'),
             state: document.getElementById('delivery-state'),
@@ -303,6 +311,8 @@
             }
 
             const customerName = document.getElementById('customer-name').value.trim();
+            const customerMobile = document.getElementById('customer-mobile').value.trim();
+            const customerEmail = document.getElementById('customer-email').value.trim();
             const address = document.getElementById('delivery-address').value.trim();
             const city = document.getElementById('delivery-city').value.trim();
             const state = document.getElementById('delivery-state').value.trim();
@@ -311,6 +321,8 @@
             const orderText = [
                 'Hi Vintoera, I confirm this order. Please coordinate delivery and payment with me via WhatsApp.',
                 `Name: ${customerName}`,
+                `Mobile: ${customerMobile}`,
+                ...(customerEmail ? [`Email: ${customerEmail}`] : []),
                 `Delivery address: ${address}, ${city}, ${state} ${postalCode}`,
                 `Items: ${cartItems.map((item) => `${item.name} x${item.quantity || 1} (unit price ${item.price})`).join(', ')}`,
                 `Total: ₹${total}.`
